@@ -1,0 +1,23 @@
+#log
+*.log
+/dist
+node_mdules
+
+# local env files
+.env.local
+.env.*.local
+
+# local  files
+npm-debug.logs*
+yarn-error.logs*
+yarn-debug.logs*
+#Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.prettierrc.json
+.vscode
+
