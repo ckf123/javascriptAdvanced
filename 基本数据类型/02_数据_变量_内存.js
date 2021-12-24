@@ -73,4 +73,53 @@
  * 如何访问对象内部数据
  *   .属性名
  *    [变量]--["属性名"]：属性名含有特殊字符
+ * 
+ * 
+ * 函数:
+ *    声明式: function test1(){}
+ *    表达式: var fun = function(){}
+ *    执行函数：
+ *        1.obj.test()
+ *        2.new test()
+ *        3.test.call/apply(obj)
+ * IIEF:
+ *   全称:Immediately -invoked Function Expression
+ * 作用:
+ *     隐藏实现
+ *     不会污染全局变量
+ * this:
+ *    调用者.
+ *       new Person(); this:为当前的新的对象
+ *       person() this:window
+ *       obj.person(); this:obj
+ * 分号问题：
+ *     小括号开头的前一条语句
+         var C = 3;
+        (function fun() {
+            console.log(1);
+        })()
+ *     中括号开头的前一条语句
+ *     var b = 0；
+ *     [1.23,32].forEach(()=>{}) 
+ *     解决:行首加括号
+ *   合并，压缩文件时不加分号会出现问题
  */
+
+(function () {
+  var a = 1;
+  function test() {
+    console.log(++a);
+  }
+  globalThis.$ = function () {
+    return {
+      test: test,
+    };
+  };
+})();
+//1.$是一个函数，2.$返回的是一个对象
+$().test();
+// let 声明的变量不会加到全局window
+
+
+
+    
