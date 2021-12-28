@@ -59,7 +59,6 @@ function inheritPrototype(subtype, superType) {
      this.name = name;
      console.log("父类" + this.name);
  }
- //
  function Sub(name) {
      Super.call(this,name)
      this.name = name
