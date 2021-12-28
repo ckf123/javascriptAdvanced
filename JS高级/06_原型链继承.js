@@ -1,4 +1,15 @@
+/*
+ * @Description: 
+ * @Version: 1.0
+ * @Author: ckf123
+ * @Date: 2021-12-27 17:27:11
+ * @LastEditors: [youname]
+ * @LastEditTime: 2021-12-29 00:34:37
+ * @FilePath: \JavscriptAdvance\JS高级\06_原型链继承.js
+ * Copyright (C) 2021 ckf. All rights reserved.
+ */
 //super 原型链继承
+ 
  function Super(name) {
      this.name = name
  }
@@ -7,7 +18,7 @@
      this.name = name;
      console.log("父类"+this.name);
  }
-//
+   
   function Sub(name) {
       this.name = name
   }
@@ -18,10 +29,10 @@
       console.log("子类"+this.name);
   }
 
+  
   var instance = new Sub();
 
 console.log(instance.__proto__);
-
 //借用构造函数继承+原型链继承
 function Super(name) {
     this.name = name
@@ -89,7 +100,9 @@ console.log(instance.color);
     var p2 = Object.create(person);
     p1.friends.push("rob");
     console.log(p2.friends);
+    
 
+    
     
 
 
