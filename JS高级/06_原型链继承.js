@@ -74,7 +74,7 @@ console.log(instance.color);
 
  /**
   *  原型式继承 : 场景：让一个对象保持与另一个对象类似的情况
-  *         问题:访问还是通过原型链去访问. 无法解决
+  *              问题:访问还是通过原型链去访问. 无法解决
   *  function object(o) {
   *     function F(){}
   *     f.prototype = o;
