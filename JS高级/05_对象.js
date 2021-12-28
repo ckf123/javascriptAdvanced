@@ -24,7 +24,7 @@
  *      通过闭包方式进行实现修改数据，添加数据
  *      特点：不使用new 进行创建构造函数，创建对象的实例方法不引用this
  *      适用于:禁用this和new 的环境
- *     
+ *   9.
  */
 
 
@@ -73,3 +73,8 @@ var p = Person("ckf",23,"Math");
 p.sayName();
 p.setName(111);
 p.sayName();
+
+
+
+
+
