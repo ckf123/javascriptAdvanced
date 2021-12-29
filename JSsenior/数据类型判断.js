@@ -1,4 +1,14 @@
 /*
+ * @Description:
+ * @Version: 1.0
+ * @Author: ckf123
+ * @Date: 2021-12-20 11:37:01
+ * @LastEditors: [youname]
+ * @LastEditTime: 2021-12-29 18:25:19
+ * @FilePath: \JavscriptAdvance\JSsenior\数据类型判断.js
+ * Copyright (C) 2021 ckf. All rights reserved.
+ */
+/*
 基本数据类型
 String null undefined Number Boolean
 引用数据类型
@@ -22,6 +32,7 @@ undefined： 定义了未赋值
 
 
 */
+
 console.log(typeof 1.2); //number
 console.log(typeof "32"); //string
 console.log(typeof true); //boolean
@@ -29,4 +40,3 @@ console.log(typeof null); //object
 console.log(typeof undefined); //undefined
 
 console.log(undefined === null); //false
-

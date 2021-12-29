@@ -4,8 +4,8 @@
  * @Author: ckf123
  * @Date: 2021-12-27 12:49:44
  * @LastEditors: [youname]
- * @LastEditTime: 2021-12-29 00:52:36
- * @FilePath: \JavscriptAdvance\JS高级\04_js模块.js
+ * @LastEditTime: 2021-12-29 18:38:54
+ * @FilePath: \JavscriptAdvance\JSsenior\04_js模块.js
  * Copyright (C) 2021 ckf. All rights reserved.
  */
 /*
